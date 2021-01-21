@@ -1,0 +1,14 @@
+package com.example.demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+
+@Controller
+public class ContactController 
+{
+	public String contactList(Model model)
+	{
+		model.addAttribute("contacts");
+		return "home";
+	}
+}
